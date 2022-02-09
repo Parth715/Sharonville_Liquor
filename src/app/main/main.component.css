@@ -1,0 +1,22 @@
+main{
+    height: max-content;
+    border: 1px solid blue;
+}
+.navlist{
+    display: flex;
+    margin-top: 0;
+    float: center;
+    width: 70%;
+    margin-left: 20%
+}
+li{
+    list-style-type: none;
+    margin-right: 1%;
+}
+.bg-image{
+    background-image: url(../../assets/Sharonville_Liquor&Wine.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
