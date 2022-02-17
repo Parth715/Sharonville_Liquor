@@ -5,11 +5,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { LocationComponent } from './location/location.component';
+import { StoreHoursComponent } from './store-hours/store-hours.component';
+import { LoginComponent } from './login/login.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    LocationComponent,
+    StoreHoursComponent,
+    LoginComponent,
+    ContactUsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

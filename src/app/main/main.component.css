@@ -1,46 +1,19 @@
-.nav-bar{
-    background-color: #080A43;
-    width: 103.05%;
-    position: relative;
-    margin-left: -2%;
-    margin-top: -1%;
-    display: flex;justify-content: space-between;
-}
-.nav-bar-img{
-    margin-top: 3%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    height: 7em;
-    width:10%;
-}
-.nav-bar-options{
-    display:flex;
-    color: coral;
-    gap: 8vh;
-    width: 100%;
-    width: 45%;
-    height: 50%;
-    margin-top: 4%;
-    flex-direction: row-reverse;
-    margin-right:2%
-}
-.option{
-    text-align: right;
-    float: right;
-}
-
 section{
-    background-image: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
+    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
     height: 100ch;
     justify-content: center;
     position: relative;
     background-size: 100% 100%; 
     text-align: center;
 }
-div-bg{
-    width: 80%;
+div{
+    width: 70%;
     margin: auto;
-    font-family: sans-serif;
     opacity: 1;
     font-weight: 900;
+}
+p{
+    font-size: large;
+    font-weight: 520;
+    font-family:Georgia;
 }
