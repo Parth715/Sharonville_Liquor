@@ -14,12 +14,12 @@
     width:10%;
 }
 section{
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
-     height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
+    height: 100ch   ;
     display: flex;
     justify-content: center;
     position: relative;
-    background-size: cover;
+    background-size: 100% 100%; 
 }
 div-bg{
     width: 80%;
