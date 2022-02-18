@@ -1,0 +1,12 @@
+section{
+    text-align: center;
+    font-family: Georgia;
+}
+section{
+    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
+    height: 80ch;
+    justify-content: center;
+    position: relative;
+    background-size: 100% 100%; 
+    text-align: center;
+}
