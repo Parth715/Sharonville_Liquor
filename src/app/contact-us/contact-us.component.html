@@ -11,9 +11,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="2">Name*<br>
-                        <input type="string" placeholder="Firstname" class="name">
-                        <input type="string" placeholder="Lastname" class="name">
+                    <td class="name" colspan="2">Name*<br>
+                        <input type="string" placeholder="Firstname">
+                        <input type="string" placeholder="Lastname">
                 </tr>
                 <tr>
                     <td>Email*<br>
@@ -22,22 +22,15 @@
                 </tr>
                 <tr>
                     <td>Phone*<br>
-                        <input type="string" placeholder="(###)*" class="phone">
-                        <input type="string" placeholder="###*" class="phone">
-                        <input type="string" placeholder="####*" class="phone"></td>
-                </tr>
-                <tr>
-                    <td>Message*<br>
-                    <input type="string" placeholder="Message" class="message">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-danger">Submit</button>
-                    </td>
+                        <input type="string" placeholder="(###)-###-###" class="phone"></td>
                 </tr>
             </tbody>
         </table>
+        <form class="message">
+            <label for="msg">Message*</label>
+            <textarea id="msg" name="msg" rows="5" cols="50" placeholder="Message"></textarea>
+        </form>
+        <button class="btn btn-danger">Submit</button>
     </section>
 </body>
 </html>

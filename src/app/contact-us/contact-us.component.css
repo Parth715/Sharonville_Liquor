@@ -16,6 +16,7 @@ table{
 }
 input{
     border-radius: 5px;
+    overflow: hidden;
 }
 h2{
     margin-top: 10%;
@@ -25,15 +26,21 @@ td{
     text-align: center;
 }
 .name{
-    width: 300px;
+    display: inline;
+    flex-direction: column;
+    max-width: 300px;
 }
 .email{
     width:700px;
 }
 .phone{
-    width: 100px;
+    width: 200px;
 }
 .message{
-    width:700px;
-    height:200px
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height:200px;
+    margin-left: 17%;
+    color: coral;
 }
