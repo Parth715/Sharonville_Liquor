@@ -10,6 +10,7 @@ import { StoreHoursComponent } from './store-hours/store-hours.component';
 import { LoginComponent } from './login/login.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ManagermainComponent } from './managermain/managermain.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     StoreHoursComponent,
     LoginComponent,
     ContactUsComponent,
-    NavigationComponent
+    NavigationComponent,
+    ManagermainComponent
   ],
   imports: [
     BrowserModule,
