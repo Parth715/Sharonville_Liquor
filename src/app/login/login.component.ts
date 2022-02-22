@@ -13,12 +13,16 @@ export class LoginComponent implements OnInit {
 
   username!:string;
   password!:string;
+  message!:string;
+
   ngOnInit(): void {
+    this.message = "";
   }
   USER(): void{
     this.unisrv.User(this.username, this.password).subscribe({
-      next: res => this.unisrv.loggedinuser = res,
-      error: err => console.log(err)
+      next: res => {this.unisrv.loggedinuser = res
+                    this.router.navigate(["/manager"])},
+      error: err => this.message = "Invalid Username/Password"
     });
   }
 

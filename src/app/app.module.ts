@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ManagermainComponent } from './managermain/managermain.component';
+import { MenuComponent } from './Managermenu/menu/menu.component';
+import { MenuitemsComponent } from './Managermenu/menuitems/menuitems.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ManagermainComponent } from './managermain/managermain.component';
     LoginComponent,
     ContactUsComponent,
     NavigationComponent,
-    ManagermainComponent
+    ManagermainComponent,
+    MenuComponent,
+    MenuitemsComponent
   ],
   imports: [
     BrowserModule,

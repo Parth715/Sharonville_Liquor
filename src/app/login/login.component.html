@@ -6,22 +6,13 @@
 <body>
     <section>
         <p>*FOR MANAGER ONLY*</p>
-        <table>
-            <thead>
-                <h3>LOGIN</h3>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input [(ngModel)]="username" type="string" placeholder="Username"></td>
-                </tr>
-                <tr>
-                    <td><input [(ngModel)]="password" type="string" placeholder="Password"></td>
-                </tr>
-                <tr>
-                    <td><button class = "btn btn-primary" (click)="USER()">Sign in</button></td>
-                </tr>
-            </tbody>
-        </table>
+        <h3>Login</h3>
+        <form (ngSubmit)="USER()">
+            <input [(ngModel)]="username" placeholder="Username"><br>
+            <input [(ngModel)]="password" placeholder="Password"><br>
+            <button class = "btn btn-primary" type="submit">Sign in</button>
+        </form>
+        <h5 class="error">{{message}}</h5>
     </section>
 </body>
 </html>
