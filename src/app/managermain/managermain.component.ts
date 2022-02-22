@@ -17,7 +17,7 @@ export class ManagermainComponent implements OnInit {
   currentDateTime: number = Date.now();
   ngOnInit(): void {
     if(this.user == undefined || this.user.admin == false){
-      this.router.navigate(["/main"])
+      this.router.navigate(["/login"])
     }
     setInterval(() => {
       this.currentDateTime = Date.now();

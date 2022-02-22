@@ -14,6 +14,7 @@ import { ManagermainComponent } from './managermain/managermain.component';
 import { MenuComponent } from './Managermenu/menu/menu.component';
 import { MenuitemsComponent } from './Managermenu/menuitems/menuitems.component';
 import { DatePipe } from '@angular/common';
+import { ManagercustomerComponent } from './managercustomer/managercustomer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DatePipe } from '@angular/common';
     NavigationComponent,
     ManagermainComponent,
     MenuComponent,
-    MenuitemsComponent
+    MenuitemsComponent,
+    ManagercustomerComponent
   ],
   imports: [
     BrowserModule,

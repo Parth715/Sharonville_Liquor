@@ -1,6 +1,9 @@
 section{
     background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
-    height: 100ch;
+    height: 80ch;
+    width: 110ch;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     position: relative;
     background-size: 100% 100%; 
