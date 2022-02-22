@@ -8,8 +8,8 @@
         <p>*FOR MANAGER ONLY*</p>
         <h3>Login</h3>
         <form (ngSubmit)="USER()">
-            <input [(ngModel)]="username" placeholder="Username"><br>
-            <input [(ngModel)]="password" placeholder="Password"><br>
+            <input [(ngModel)]="username" name="username" placeholder="Username"><br>
+            <input [(ngModel)]="password" type="password" name="password" placeholder="Password"><br>
             <button class = "btn btn-primary" type="submit">Sign in</button>
         </form>
         <h5 class="error">{{message}}</h5>

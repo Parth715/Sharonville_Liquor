@@ -13,6 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ManagermainComponent } from './managermain/managermain.component';
 import { MenuComponent } from './Managermenu/menu/menu.component';
 import { MenuitemsComponent } from './Managermenu/menuitems/menuitems.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { MenuitemsComponent } from './Managermenu/menuitems/menuitems.component'
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
