@@ -8,6 +8,7 @@ section{
     position: relative;
     background-size: 100% 100%; 
     text-align: center;
+    animation: animation 1s;
 }
 div{
     width: 70%;
@@ -19,4 +20,8 @@ p{
     font-size: large;
     font-weight: 520;
     font-family:Georgia;
+}
+@keyframes animation{
+    from{top:100px;}
+    to{top:0px}
 }

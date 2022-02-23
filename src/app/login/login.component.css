@@ -10,13 +10,14 @@ h3{
 section{
     background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
     height: 75ch;
-    width: 120ch;
+    width: 100ch;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     position: relative;
     background-size: 100% 100%; 
     text-align: center;
+    animation: animation 1s;
 }
 input{
     border-radius: 8px;
@@ -25,4 +26,8 @@ input{
     color: red;
     font-weight: 800;
     font-family: arial;
+}
+@keyframes animation{
+    from{top:100px;}
+    to{top:0px}
 }
