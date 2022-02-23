@@ -15,6 +15,7 @@ import { MenuComponent } from './Managermenu/menu/menu.component';
 import { MenuitemsComponent } from './Managermenu/menuitems/menuitems.component';
 import { DatePipe } from '@angular/common';
 import { ManagercustomerComponent } from './managercustomer/managercustomer.component';
+import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ManagercustomerComponent } from './managercustomer/managercustomer.comp
     ManagermainComponent,
     MenuComponent,
     MenuitemsComponent,
-    ManagercustomerComponent
+    ManagercustomerComponent,
+    AddcustomerComponent
   ],
   imports: [
     BrowserModule,

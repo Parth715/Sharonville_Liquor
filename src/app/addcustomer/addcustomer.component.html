@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Customer</title>
+</head>
+<body>
+    <button class="btn btn-primary" routerLink="/customers">Customers</button>
+    <h3>CREATE CUSTOMER</h3>
+    <form (ngSubmit)="ENTER()">
+        <input [(ngModel)]="customer.firstName" name="firstName" placeholder="First Name*"><br>
+        <input [(ngModel)]="customer.lastName" name="lastName" placeholder="Last Name*"><br>
+        <input [(ngModel)]="customer.phone" name="phone" placeholder="Phone"><br>
+        <input class=email [(ngModel)]="customer.email" name="email" placeholder="Email"><br>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</body>
+</html>

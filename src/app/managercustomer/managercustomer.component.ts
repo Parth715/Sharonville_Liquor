@@ -27,5 +27,12 @@ export class ManagercustomerComponent implements OnInit {
       error: err => console.log(err)
     });
   }
+  delete(id: number): void{
+    this.custsrv.DeleteCustomer(id).subscribe({
+      next: res => {console.log("deleted")
+                    this.update();},
+      error: err => console.log(err)
+    });
+  }
 
 }
