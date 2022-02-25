@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: "main", component: MainComponent},
   {path: "manager", component: ManagermainComponent},
   {path: "customers", component: ManagercustomerComponent},
-  {path: "addcustomer", component: AddcustomerComponent}
+  {path: "addcustomer", component: AddcustomerComponent},
+  {path: "customerfeedback", component: CustomerfeedbackComponent}
 ];
 
 @NgModule({

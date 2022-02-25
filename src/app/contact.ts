@@ -1,7 +1,7 @@
 export class Contact {
     id: number = 0;
-    firstname: string = "";
-    lastname: string = "";
+    firstName: string = "";
+    lastName: string = "";
     email: string = "";
     phone: string = "";
     message: string = "";

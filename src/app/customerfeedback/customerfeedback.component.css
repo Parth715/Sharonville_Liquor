@@ -1,0 +1,11 @@
+table{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    text-align: center;
+}
+.coral{
+    background-color: coral;
+    border: 0px;
+}

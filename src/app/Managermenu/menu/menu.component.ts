@@ -9,7 +9,6 @@ import { Menu } from '../menu';
 export class MenuComponent implements OnInit {
 
 menus: Menu[] = [
-  new Menu("Customers", "/customers"),
   new Menu("Customer Feedback", "/customerfeedback")
 ]
 

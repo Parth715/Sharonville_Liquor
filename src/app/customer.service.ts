@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Contact } from './contact';
 import { Customer } from './managercustomer/customer';
 import { UniversalService } from './universal.service';
 import { User } from './user';
@@ -20,5 +21,11 @@ export class CustomerService {
   }
   DeleteCustomer(id: number): Observable<Customer>{
     return this.httpmeth.delete(`${this.baseurl}/customers/${id}`) as Observable<Customer>
+  }
+  AddCustomerFeedback(customerfeedback: Contact): Observable<Contact>{
+    return this.httpmeth.post(`${this.baseurl}/contacts`, customerfeedback) as Observable<Contact>
+  }
+  GetCustomerFeedback(): Observable<Contact[]>{
+    return this.httpmeth.get(`${this.baseurl}/contacts`) as Observable<Contact[]>
   }
 }

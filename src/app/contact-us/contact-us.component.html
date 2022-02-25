@@ -12,25 +12,25 @@
             <tbody>
                 <tr>
                     <td class="name" colspan="2">Name*<br>
-                        <input type="string" placeholder="Firstname">
-                        <input type="string" placeholder="Lastname">
+                        <input [(ngModel)]="CustomerFB.firstName" type="string" placeholder="Firstname">
+                        <input [(ngModel)]="CustomerFB.lastName" type="string" placeholder="Lastname">
                 </tr>
                 <tr>
                     <td>Email*<br>
-                        <input type="string" placeholder="Email" class="email">
+                        <input [(ngModel)]="CustomerFB.email" type="string" placeholder="Email" class="email">
                     </td>
                 </tr>
                 <tr>
                     <td>Phone*<br>
-                        <input type="string" placeholder="(###)-###-###" class="phone"></td>
+                        <input [(ngModel)]="CustomerFB.phone" type="string" placeholder="(###)-###-###" class="phone"></td>
                 </tr>
             </tbody>
         </table>
         <form class="message">
             <label for="msg">Message*</label>
-            <textarea id="msg" name="msg" rows="5" cols="50" placeholder="Message"></textarea>
+            <textarea [(ngModel)]="CustomerFB.message" id="msg" name="msg" rows="5" cols="50" placeholder="Message"></textarea>
         </form>
-        <button class="btn btn-danger">Submit</button>
+        <button class="btn btn-danger" (click)="CreateFB()">Submit</button>
     </section>
 </body>
 </html>
