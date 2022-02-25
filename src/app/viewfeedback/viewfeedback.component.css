@@ -1,0 +1,20 @@
+table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.name{
+    width:200px;
+}
+.email{
+    width: 350px;
+}
+.message{
+    width:600px;
+    height:200px;
+}
+.btn-primary{
+    background-color: coral;
+    border: 0px;
+}

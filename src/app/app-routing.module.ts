@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { ManagercustomerComponent } from './managercustomer/managercustomer.component';
 import { ManagermainComponent } from './managermain/managermain.component';
 import { StoreHoursComponent } from './store-hours/store-hours.component';
+import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/main", pathMatch: "full"},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: "manager", component: ManagermainComponent},
   {path: "customers", component: ManagercustomerComponent},
   {path: "addcustomer", component: AddcustomerComponent},
-  {path: "customerfeedback", component: CustomerfeedbackComponent}
+  {path: "customerfeedback", component: CustomerfeedbackComponent},
+  {path: "viewfeedback/:id", component: ViewfeedbackComponent}
 ];
 
 @NgModule({

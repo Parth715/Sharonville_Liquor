@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, ObservableLike } from 'rxjs';
 import { Contact } from './contact';
 import { Customer } from './managercustomer/customer';
 import { UniversalService } from './universal.service';
@@ -27,5 +27,8 @@ export class CustomerService {
   }
   GetCustomerFeedback(): Observable<Contact[]>{
     return this.httpmeth.get(`${this.baseurl}/contacts`) as Observable<Contact[]>
+  }
+  GetFeedbackByPK(id: string): Observable<Contact>{
+    return this.httpmeth.get(`${this.baseurl}/contacts/${id}`) as Observable<Contact>
   }
 }

@@ -24,12 +24,12 @@
                     <td>Phone*<br>
                         <input [(ngModel)]="CustomerFB.phone" type="string" placeholder="(###)-###-###" class="phone"></td>
                 </tr>
+                <tr>
+                    <td>Message*<br>
+                        <textarea [(ngModel)]="CustomerFB   .message" id="msg" name="msg" rows="5" cols="100" placeholder="Message"></textarea></td>
+                </tr>
             </tbody>
         </table>
-        <form class="message">
-            <label for="msg">Message*</label>
-            <textarea [(ngModel)]="CustomerFB.message" id="msg" name="msg" rows="5" cols="50" placeholder="Message"></textarea>
-        </form>
         <button class="btn btn-danger" (click)="CreateFB()">Submit</button>
     </section>
 </body>

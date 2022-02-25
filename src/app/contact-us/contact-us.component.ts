@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Contact } from '../contact';
 import { CustomerService } from '../customer.service';
-import { Customer } from '../managercustomer/customer';
 import { UniversalService } from '../universal.service';
 
 @Component({
@@ -11,15 +11,16 @@ import { UniversalService } from '../universal.service';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor(private unisrv: UniversalService, private custsrv: CustomerService) { }
+  constructor(private unisrv: UniversalService, private custsrv: CustomerService, private router: Router) { }
 
-  CustomerFB!: Contact;
+  CustomerFB: Contact = new Contact;
   ngOnInit(): void {
   }
 
   CreateFB(): void{
     this.custsrv.AddCustomerFeedback(this.CustomerFB).subscribe({
-      next: res => console.log(res),
+      next: res => {console.log(res)
+                    this.router.navigate(["/login"])},
       error: err => console.log(err)
     });
   }

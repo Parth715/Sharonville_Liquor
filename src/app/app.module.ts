@@ -17,6 +17,7 @@ import { DatePipe } from '@angular/common';
 import { ManagercustomerComponent } from './managercustomer/managercustomer.component';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.component';
+import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.c
     MenuitemsComponent,
     ManagercustomerComponent,
     AddcustomerComponent,
-    CustomerfeedbackComponent
+    CustomerfeedbackComponent,
+    ViewfeedbackComponent
   ],
   imports: [
     BrowserModule,

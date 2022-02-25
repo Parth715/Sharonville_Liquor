@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>View Feedback</title>
+</head>
+<body>
+    <button class="btn btn-primary" routerLink="/customerfeedback">Back</button>
+    <table>
+        <tr>
+            <td>First Name: </td>
+            <td><input class="name" [(ngModel)]="feedback.firstName" readonly></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input class="name" [(ngModel)]="feedback.lastName" readonly></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input class="email" [(ngModel)]="feedback.email" readonly></td>
+        </tr>
+        <tr>
+            <td>Phone: </td>
+            <td><input [(ngModel)]="feedback.phone" readonly></td>
+        </tr>
+        <tr>
+            <td>Message: </td>
+            <td><textarea [(ngModel)]="feedback.message" id="msg" name="msg" rows="5" cols="100"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>

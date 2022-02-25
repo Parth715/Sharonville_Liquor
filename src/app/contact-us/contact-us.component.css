@@ -41,11 +41,8 @@ td{
     width: 200px;
 }
 .message{
-    display: flex;
-    flex-direction: column;
     max-width: 1000px;
     height:200px;
-    color: coral;
 }
 @keyframes animation{
     from{top:100px;}
