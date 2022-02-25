@@ -1,0 +1,26 @@
+.nav-bar{
+    background-color: #080A43;
+    width: 100%;
+    margin-bottom: 0%;
+    position: relative;
+    display: flex;
+    height: 150px;
+}
+.nav-bar-img{
+    height: 80%;
+    weight: 10%;
+    border-radius: 75%;
+}
+.nav-bar-options{
+    display:flex;
+    color: coral;
+    gap: 8vh;
+    width: 40%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+h1{
+    color:coral;
+}

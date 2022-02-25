@@ -18,6 +18,7 @@ import { ManagercustomerComponent } from './managercustomer/managercustomer.comp
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.component';
 import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
+import { BottomnavComponent } from './bottomnav/bottomnav.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
     ManagercustomerComponent,
     AddcustomerComponent,
     CustomerfeedbackComponent,
-    ViewfeedbackComponent
+    ViewfeedbackComponent,
+    BottomnavComponent
   ],
   imports: [
     BrowserModule,
