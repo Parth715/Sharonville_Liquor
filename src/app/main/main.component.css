@@ -25,4 +25,5 @@ div .item img{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 8px;
 }
