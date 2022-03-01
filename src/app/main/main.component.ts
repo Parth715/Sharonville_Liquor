@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
   }
+  homeSlider={items: 1, dots: true, nav: true}
 
 }

@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { ManagercustomerComponent } from './managercustomer/managercustomer.component';
 import { ManagermainComponent } from './managermain/managermain.component';
 import { StoreHoursComponent } from './store-hours/store-hours.component';
+import { TrialComponent } from './trial/trial.component';
 import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: "customers", component: ManagercustomerComponent},
   {path: "addcustomer", component: AddcustomerComponent},
   {path: "customerfeedback", component: CustomerfeedbackComponent},
-  {path: "viewfeedback/:id", component: ViewfeedbackComponent}
+  {path: "viewfeedback/:id", component: ViewfeedbackComponent},
+  {path: "trial", component: TrialComponent}
 ];
 
 @NgModule({

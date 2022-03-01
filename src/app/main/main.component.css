@@ -11,17 +11,18 @@ section{
     animation: animation 1s;
 }
 div{
-    width: 70%;
+    width: 95%;
     margin: auto;
     opacity: 1;
     font-weight: 900;
 }
-p{
-    font-size: large;
-    font-weight: 520;
-    font-family:Georgia;
-}
 @keyframes animation{
     from{top:100px;}
     to{top:0px}
+}
+div .item img{
+    height: 66vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

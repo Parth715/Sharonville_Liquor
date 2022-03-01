@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import {OwlModule} from 'ngx-owl-carousel';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LocationComponent } from './location/location.component';
@@ -19,6 +20,7 @@ import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.component';
 import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
 import { BottomnavComponent } from './bottomnav/bottomnav.component';
+import { TrialComponent } from './trial/trial.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +38,15 @@ import { BottomnavComponent } from './bottomnav/bottomnav.component';
     AddcustomerComponent,
     CustomerfeedbackComponent,
     ViewfeedbackComponent,
-    BottomnavComponent
+    BottomnavComponent,
+    TrialComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    OwlModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
