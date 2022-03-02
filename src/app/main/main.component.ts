@@ -10,6 +10,6 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  homeSlider={items: 1, dots: true, nav: true}
+  homeSlider={items: 1, dots: true, nav: false, autoplay: true, autoplaySpeed:1000, smartSpeed:1500, autoplayHoverPause: true, loop: true}
 
 }
