@@ -31,4 +31,7 @@ export class CustomerService {
   GetFeedbackByPK(id: string): Observable<Contact>{
     return this.httpmeth.get(`${this.baseurl}/contacts/${id}`) as Observable<Contact>
   }
+  DeleteFeedBack(id: number): Observable<Contact>{
+    return this.httpmeth.delete(`${this.baseurl}/contacts/${id}`) as Observable<Contact>
+  }
 }

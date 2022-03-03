@@ -8,7 +8,7 @@ import { User } from './user';
 })
 export class UniversalService {
 
-  baseurl = "http://localhost:9876/api"
+  baseurl = "http://sharonvi.w29.wh-2.com/B/api"
   constructor(private httpmeth: HttpClient) { }
   loggedinuser!: User
   User(username: string, password: string): Observable<User>{

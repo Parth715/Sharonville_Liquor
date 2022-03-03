@@ -19,7 +19,7 @@
                 <td>{{c.lastName}}</td>
                 <td>{{c.email}}</td>
                 <td>{{c.phone}}</td>
-                <td><button class="btn btn-warning" routerLink="/viewfeedback/{{c.id}}">View</button> | <button class="btn btn-danger">Delete</button></td>
+                <td><button class="btn btn-warning" routerLink="/viewfeedback/{{c.id}}">View</button> | <button class="btn btn-danger" (click)="Delete(c.id)">Delete</button></td>
             </tr>
         </tbody>
     </table>
