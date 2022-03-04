@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: "addcustomer", component: AddcustomerComponent},
   {path: "customerfeedback", component: CustomerfeedbackComponent},
   {path: "viewfeedback/:id", component: ViewfeedbackComponent},
-  {path: "trial", component: TrialComponent}
+  {path: "thankyou", component: TrialComponent}
 ];
 
 @NgModule({

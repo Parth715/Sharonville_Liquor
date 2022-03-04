@@ -20,7 +20,7 @@ export class ContactUsComponent implements OnInit {
   CreateFB(): void{
     this.custsrv.AddCustomerFeedback(this.CustomerFB).subscribe({
       next: res => {console.log(res)
-                    this.router.navigate(["/login"])},
+                    this.router.navigate(["/thankyou"])},
       error: err => console.log(err)
     });
   }

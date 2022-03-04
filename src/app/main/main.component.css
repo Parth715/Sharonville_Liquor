@@ -1,6 +1,6 @@
 section{
     background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../../assets/Sharonville_Bottles.JPG");
-    height: 100ch;
+    height: 110ch;
     width: 130ch;
     margin-left: auto;
     margin-right: auto;
@@ -9,12 +9,14 @@ section{
     background-size: 100% 100%; 
     text-align: center;
     animation: animation 1s;
+    position: relative;
 }
 div{
     width: 95%;
     margin: auto;
     opacity: 1;
     font-weight: 900;
+    margin-bottom: -5%;
 }
 @keyframes animation{
     from{top:100px;}
@@ -26,4 +28,11 @@ div .item img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    position: relative;
 }
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: white!important; /* dots color*/
+  }
+::ng-deep .owl-theme .owl-dots .owl-dot.active span {
+    background: coral!important; /* dots color*/
+  }

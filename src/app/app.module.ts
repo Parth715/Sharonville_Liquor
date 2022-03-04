@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import {OwlModule} from 'ngx-owl-carousel';
+import { OwlModule } from 'ngx-owl-carousel';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LocationComponent } from './location/location.component';
