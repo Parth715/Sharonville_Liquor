@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.component';
+import { EditComponent } from './expenses/edit/edit.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
@@ -24,7 +26,9 @@ const routes: Routes = [
   {path: "addcustomer", component: AddcustomerComponent},
   {path: "customerfeedback", component: CustomerfeedbackComponent},
   {path: "viewfeedback/:id", component: ViewfeedbackComponent},
-  {path: "thankyou", component: TrialComponent}
+  {path: "thankyou", component: TrialComponent},
+  {path: "expense", component: ExpensesComponent},
+  {path: "editexpense/:id", component: EditComponent}
 ];
 
 @NgModule({

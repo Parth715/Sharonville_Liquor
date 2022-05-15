@@ -23,7 +23,7 @@ div{
     to{top:0px}
 }
 div .item img{
-    height: 70vh;
+    height: 600px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -31,8 +31,12 @@ div .item img{
     position: relative;
 }
 ::ng-deep .owl-theme .owl-dots .owl-dot span {
-    background: white!important; /* dots color*/
+    background: black!important; /* dots color*/
   }
-::ng-deep .owl-theme .owl-dots .owl-dot.active span {
-    background: coral!important; /* dots color*/
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: coral!important; /*active and on hover color*/
   }
+::ng-deep .owl-theme .owl-nav span{
+    width: 200px;
+}

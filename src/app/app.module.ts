@@ -21,6 +21,9 @@ import { CustomerfeedbackComponent } from './customerfeedback/customerfeedback.c
 import { ViewfeedbackComponent } from './viewfeedback/viewfeedback.component';
 import { BottomnavComponent } from './bottomnav/bottomnav.component';
 import { TrialComponent } from './trial/trial.component';
+import { ExpensesComponent } from './expenses/expenses.component';
+import { EditComponent } from './expenses/edit/edit.component';
+import { AddComponent } from './expenses/add/add.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { TrialComponent } from './trial/trial.component';
     CustomerfeedbackComponent,
     ViewfeedbackComponent,
     BottomnavComponent,
-    TrialComponent
+    TrialComponent,
+    ExpensesComponent,
+    EditComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
