@@ -1,1 +1,23 @@
-<p>add works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Expense</title>
+</head>
+<body>
+    <p>
+        <button class = "btn coral" routerLink="/expense">Back</button>
+    </p>
+    <table>
+        <tbody>
+            <tr><td>Name: </td> <td><input [(ngModel)]= Exp.name></td></tr>
+            <tr><td>Date: </td> <td><input [(ngModel)]= Exp.date></td></tr>
+            <tr><td>In: </td> <td><input [(ngModel)]= Exp.in></td></tr>
+            <tr><td>Out: </td> <td><input [(ngModel)]= Exp.out></td></tr>
+            <tr><td colspan="2"><button class = "btn btn-primary" (click)="save()">Save</button></td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

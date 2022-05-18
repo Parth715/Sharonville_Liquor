@@ -4,6 +4,6 @@ export class Expense {
     id: number = 0;
     name: String = "";
     date: String = "";
-    in!: DecimalPipe;
-    out!: DecimalPipe;
+    in: number = 0.0;
+    out:number = 0.0;
 }

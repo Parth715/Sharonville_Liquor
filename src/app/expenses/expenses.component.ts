@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Expense } from '../expense';
 import { ExpenseService } from '../expense.service';
+import { Totalexpense } from '../totalexpense';
+import { UniversalService } from '../universal.service';
 
 @Component({
   selector: 'app-expenses',
@@ -11,22 +13,30 @@ import { ExpenseService } from '../expense.service';
 export class ExpensesComponent implements OnInit {
 
   Flow!: Expense[];
-  constructor(private expsrv: ExpenseService, private Route: ActivatedRoute) { }
+  TotalExp!: Totalexpense;
+  constructor(private expsrv: ExpenseService, private Route: ActivatedRoute, private unisrv: UniversalService, private router: Router) { }
 
   ngOnInit(): void {
+    if(this.unisrv.loggedinuser == undefined){
+      this.router.navigate(["/login"]);
+    }
     this.reload();
   }
 
   reload(): void{
     this.expsrv.Get().subscribe({
-      next: res => this.Flow = res,
+      next: res => {this.Flow = res
+        this.expsrv.totalget().subscribe({
+          next: res => this.TotalExp = res,
+          error: err => console.log(err)
+        });},
       error: err => console.log(err)
     });
   }
-  delete(): void{
-    let id= this.Route.snapshot.params["id"];
+  delete(id:number): void{
     this.expsrv.delete(id).subscribe({
-      next: res => this.reload(),
+      next: res =>{console.log(res)
+                  this.reload()},
       error: err => console.log(err)
     });
   }
